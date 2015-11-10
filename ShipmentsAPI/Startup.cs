@@ -2,6 +2,7 @@
 using Microsoft.Owin.Cors;
 using Owin;
 using ShipmentsAPI;
+using ShipmentsAPI.App_Start;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -17,7 +18,7 @@ namespace ShipmentsAPI
         {
             var config = new HttpConfiguration();
 
-            WebApiConfig.Regtister(config);
+            WebApiConfig.Register(config);
 
             app.UseCors(CorsOptions.AllowAll);
             app.UseWebApi(config);
