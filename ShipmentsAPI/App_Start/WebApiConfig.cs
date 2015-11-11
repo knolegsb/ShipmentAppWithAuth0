@@ -5,6 +5,7 @@ using System.Net.Http.Formatting;
 using System.Web;
 using System.Web.Http;
 using Newtonsoft.Json.Serialization;
+using Owin;
 
 namespace ShipmentsAPI.App_Start
 {
